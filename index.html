@@ -282,7 +282,7 @@
   <!-- ═══════════════════════════════════════════════
        HERO
   ═══════════════════════════════════════════════ -->
-  <section id="inicio" class="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
+  <section id="inicio" class="relative flex items-center justify-center overflow-hidden" style="min-height: 100dvh; padding-top: clamp(96px, 14dvh, 160px); padding-bottom: clamp(56px, 8dvh, 80px);">
 
     <!-- Fondo dividido -->
     <div class="absolute inset-0 flex">
@@ -296,24 +296,24 @@
     <!-- Contenido -->
     <div class="relative z-10 text-center px-8 max-w-2xl w-full">
 
-      <p class="text-[14px] tracking-[0.55em] uppercase text-chrome/85 mb-8 font-light">Al Bert Hoven</p>
+      <p class="text-[14px] tracking-[0.55em] uppercase text-chrome/85 font-light" style="margin-bottom: clamp(0.5rem, 2dvh, 2rem)">Al Bert Hoven</p>
 
       <h1 class="font-serif font-light leading-none mb-1">
-        <span class="block text-6xl md:text-7xl lg:text-8xl text-chrome-hi/90 tracking-wide">Música Sinfónica</span>
-        <span class="block text-6xl md:text-7xl lg:text-8xl text-chrome-gradient italic font-semibold tracking-wide">Visceral</span>
+        <span class="block text-chrome-hi/90 tracking-wide" style="font-size: clamp(2.75rem, 7dvh, 6rem)">Música Sinfónica</span>
+        <span class="block text-chrome-gradient italic font-semibold tracking-wide" style="font-size: clamp(2.75rem, 7dvh, 6rem)">Visceral</span>
       </h1>
 
-      <div class="chrome-line w-20 mx-auto my-7"></div>
+      <div class="chrome-line w-20 mx-auto" style="margin-top: clamp(0.5rem, 1.8dvh, 1.75rem); margin-bottom: clamp(0.5rem, 1.8dvh, 1.75rem)"></div>
 
-      <p class="text-[19px] text-chrome/85 tracking-wider font-light leading-relaxed max-w-lg mx-auto mb-10">
+      <p class="text-chrome/85 tracking-wider font-light leading-relaxed max-w-lg mx-auto" style="font-size: clamp(0.875rem, 1.6dvh, 1.2rem); margin-bottom: clamp(0.75rem, 2.5dvh, 2.5rem)">
         No es música de fondo, sino una identidad con alma.<br>
         Composiciones a medida para particulares y proyectos audiovisuales.
       </p>
 
       <!-- Reproductor hero -->
-      <div class="bg-base/75 backdrop-blur-sm border border-accent/30 max-w-lg mx-auto px-8 py-6" style="box-shadow:0 0 40px rgba(74,158,255,0.06)">
+      <div class="bg-base/75 backdrop-blur-sm border border-accent/30 max-w-lg mx-auto px-8" style="padding-top: clamp(0.75rem, 1.8dvh, 1.5rem); padding-bottom: clamp(0.75rem, 1.8dvh, 1.5rem); box-shadow:0 0 40px rgba(74,158,255,0.06)">
         <!-- Waveform mini -->
-        <div id="waveformHero" class="flex items-end gap-[2px] h-12 mb-5 overflow-hidden"></div>
+        <div id="waveformHero" class="flex items-end gap-[2px] overflow-hidden" style="height: clamp(1.5rem, 3.5dvh, 3rem); margin-bottom: clamp(0.5rem, 1.2dvh, 1.25rem)"></div>
 
         <div class="flex items-center gap-6">
           <button id="playBtnHero" onclick="togglePlay()"
@@ -337,7 +337,7 @@
       </div>
 
       <a href="#contacto"
-        class="group inline-flex items-center gap-3 mt-8 px-10 py-4 border border-chrome/60 hover:border-accent text-chrome-hi hover:text-accent transition-all duration-300 relative overflow-hidden">
+        class="group inline-flex items-center gap-3 px-10 py-4 border border-chrome/60 hover:border-accent text-chrome-hi hover:text-accent transition-all duration-300 relative overflow-hidden" style="margin-top: clamp(0.5rem, 2dvh, 2rem)">
         <div class="absolute inset-0 bg-gradient-to-r from-accent/0 via-accent/8 to-accent/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
         <span class="relative text-[12px] tracking-[0.4em] uppercase font-light">Contactar</span>
         <svg class="relative w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
