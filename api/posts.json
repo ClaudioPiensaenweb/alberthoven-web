@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "slug": "proceso-creativo-idea-primer-acorde",
+    "title": "El proceso creativo: de la idea al primer acorde",
+    "excerpt": "Cada composición nace de un momento específico. No siempre es claro, no siempre es inmediato. Pero cuando aparece, tiene que traducirse en música con intención.",
+    "content": "Cada composición nace de un momento específico. No siempre es claro, no siempre es inmediato. Pero cuando aparece, tiene que traducirse en música con intención.\n\nEl proceso creativo no es lineal. Hay días en que una idea llega completa y otros en los que hay que trabajar durante horas para encontrar el primer acorde que tenga sentido. Lo importante es no forzar el resultado: la música que se construye a base de voluntad sin inspiración suena a eso.\n\nLo que sí puedo controlar es el entorno y la disciplina. Sentarme cada día frente al instrumento, escuchar con atención, dejar que las ideas fluyan sin juzgarlas demasiado pronto.",
+    "date": "2026-03-15",
+    "dateFormatted": "15 Marzo 2026",
+    "category": "Proceso Creativo",
+    "readTime": "5"
+  },
+  {
+    "id": "2",
+    "slug": "pieza-proyecto-audiovisual",
+    "title": "Trabajando en una pieza para proyecto audiovisual",
+    "excerpt": "El cliente necesitaba algo que transmitiera tensión progresiva, sin perder elegancia. La música no podía adelantarse a la imagen, pero tampoco podía quedarse atrás.",
+    "content": "El cliente necesitaba algo que transmitiera tensión progresiva, sin perder elegancia. La música no podía adelantarse a la imagen, pero tampoco podía quedarse atrás.\n\nEste tipo de encargo exige un equilibrio muy concreto: la música tiene que existir por sí misma pero también debe desaparecer cuando la imagen lo requiere. No es un trabajo de ego, es un trabajo de servicio a la narrativa.\n\nEmpecé analizando el timing del montaje, identificando los puntos de inflexión emocional. A partir de ahí, construí una estructura que respira al ritmo del contenido visual.",
+    "date": "2026-03-08",
+    "dateFormatted": "8 Marzo 2026",
+    "category": "Proyectos",
+    "readTime": "4"
+  },
+  {
+    "id": "3",
+    "slug": "influencias-clasico-contemporaneo",
+    "title": "Influencias: entre lo clásico y lo contemporáneo",
+    "excerpt": "Mi estilo se nutre de dos mundos que, en teoría, están separados por décadas. Pero en la práctica, comparten algo fundamental: la búsqueda de una narrativa clara.",
+    "content": "Mi estilo se nutre de dos mundos que, en teoría, están separados por décadas. Pero en la práctica, comparten algo fundamental: la búsqueda de una narrativa clara.\n\nDe lo clásico tomo la estructura, la lógica armónica, el sentido de desarrollo temático. De lo contemporáneo tomo la libertad de no tener que resolver hacia donde la tradición espera que resuelvas.\n\nMis referencias van desde Brahms hasta Hans Zimmer, pasando por Arvo Pärt. No como modelos a imitar sino como prueba de que la emoción puede canalizarse de formas muy distintas.",
+    "date": "2026-03-01",
+    "dateFormatted": "1 Marzo 2026",
+    "category": "Reflexiones",
+    "readTime": "6"
+  }
+]

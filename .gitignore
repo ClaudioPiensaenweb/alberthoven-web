@@ -1,0 +1,44 @@
+# === Dependencias ===
+node_modules/
+.venv/
+__pycache__/
+vendor/
+
+# === Build ===
+dist/
+build/
+.next/
+out/
+
+# === Entorno ===
+.env
+.env.local
+.env.*.local
+
+# === IDE ===
+.idea/
+.vscode/settings.json
+*.swp
+*.swo
+
+# === OS ===
+.DS_Store
+Thumbs.db
+*.log
+
+# === No necesarios en producción ===
+# Fotos originales sin comprimir (usar solo "Fotos Alberto compressed/")
+Fotos  Alberto/
+# Imagen de referencia de diseño
+referencia-web.png
+# Documento interno de contenido
+Contenido Al Ber Hoven.md
+# Cache Claude
+.claude/
+
+# ============================================
+# NO EXCLUIR — .planning/ viaja con el repo
+# Es lo que permite que cualquier dev pueda
+# continuar el proyecto sin preguntar a nadie.
+# ============================================
+# .planning/    <- NUNCA descomentar esta linea

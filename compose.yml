@@ -1,0 +1,30 @@
+services:
+
+  web:
+    image: nginx:alpine
+    restart: unless-stopped
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - .:/var/www/html
+    depends_on:
+      - php
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.alberthoven.rule=Host(`alberthoven.piensalab.com`)"
+      - "traefik.http.routers.alberthoven.entrypoints=websecure"
+      - "traefik.http.routers.alberthoven.tls.certresolver=letsencrypt"
+      - "traefik.http.services.alberthoven.loadbalancer.server.port=80"
+    networks:
+      - dokploy-network
+
+  php:
+    image: php:8.2-fpm-alpine
+    restart: unless-stopped
+    volumes:
+      - .:/var/www/html
+    networks:
+      - dokploy-network
+
+networks:
+  dokploy-network:
+    external: true

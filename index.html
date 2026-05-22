@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ── SEO básico ─────────────────────────────────────────── -->
+  <title>Al Bert Hoven | Compositor Sinfónico · Zaragoza</title>
+  <meta name="description" content="Compositor sinfónico en Zaragoza. Composiciones a medida para proyectos audiovisuales, cine e instituciones. Música que traduce la emoción en estructura.">
+  <meta name="keywords" content="compositor sinfónico, música para cine, composición audiovisual, Zaragoza, Al Bert Hoven, música orquestal">
+  <meta name="author" content="Al Bert Hoven">
+  <link rel="canonical" href="https://alberthoven.com/">
+
+  <!-- ── Open Graph ──────────────────────────────────────────── -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://alberthoven.com/">
+  <meta property="og:title"       content="Al Bert Hoven | Compositor Sinfónico · Zaragoza">
+  <meta property="og:description" content="Compositor sinfónico en Zaragoza. Composiciones a medida para proyectos audiovisuales, cine e instituciones.">
+  <meta property="og:image"       content="https://alberthoven.com/img/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale"      content="es_ES">
+  <meta property="og:site_name"   content="Al Bert Hoven">
+
+  <!-- ── Twitter Card ───────────────────────────────────────── -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Al Bert Hoven | Compositor Sinfónico">
+  <meta name="twitter:description" content="Composiciones sinfónicas a medida para proyectos audiovisuales y cine. Zaragoza.">
+  <meta name="twitter:image"       content="https://alberthoven.com/img/og-cover.jpg">
+
+  <!-- ── Schema.org JSON-LD ─────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://alberthoven.com/#person",
+        "name": "Al Bert Hoven",
+        "alternateName": "Alberto Luna",
+        "jobTitle": "Compositor Sinfónico",
+        "description": "Compositor sinfónico basado en Zaragoza especializado en música para proyectos audiovisuales, cine e instituciones. Su lenguaje fusiona la estructura clásica con la tensión dramática contemporánea.",
+        "url": "https://alberthoven.com/",
+        "email": "contacto@alberthoven.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Zaragoza",
+          "addressRegion": "Aragón",
+          "addressCountry": "ES"
+        },
+        "knowsAbout": [
+          "Composición sinfónica",
+          "Música para cine",
+          "Música para proyectos audiovisuales",
+          "Orquestación",
+          "Composición a medida"
+        ],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Compositor",
+          "occupationLocation": {
+            "@type": "City",
+            "name": "Zaragoza"
+          }
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://alberthoven.com/#website",
+        "name": "Al Bert Hoven",
+        "url": "https://alberthoven.com/",
+        "description": "Sitio oficial del compositor sinfónico Al Bert Hoven. Composiciones a medida para proyectos audiovisuales y cine.",
+        "author": { "@id": "https://alberthoven.com/#person" },
+        "inLanguage": "es",
+        "publisher": { "@id": "https://alberthoven.com/#person" }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://alberthoven.com/#service",
+        "name": "Composición Sinfónica a Medida",
+        "provider": { "@id": "https://alberthoven.com/#person" },
+        "description": "Servicio de composición musical sinfónica personalizada para proyectos audiovisuales, cine, publicidad e instituciones.",
+        "areaServed": {
+          "@type": "Country",
+          "name": "España"
+        },
+        "serviceType": "Composición musical",
+        "url": "https://alberthoven.com/#contacto"
+      }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,300;1,6..72,400;1,6..72,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            base:        '#080808',
+            base2:       '#0F0F0F',
+            base3:       '#141414',
+            chrome:      '#C0C0C0',
+            'chrome-hi': '#F0F0F0',
+            'chrome-lo': '#404040',
+            accent:      '#4A9EFF',
+            'accent-hi': '#6BB3FF',
+          },
+          fontFamily: {
+            serif: ['Newsreader', 'Georgia', 'serif'],
+            sans:  ['Plus Jakarta Sans', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Texto cromado metálico */
+    .text-chrome-gradient {
+      background: linear-gradient(160deg, #808080 0%, #C8C8C8 25%, #F5F5F5 50%, #C8C8C8 75%, #808080 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Línea decorativa con pico dorado */
+    .chrome-line {
+      height: 1px;
+      background: linear-gradient(to right, transparent 0%, #404040 20%, #4A9EFF 50%, #404040 80%, transparent 100%);
+    }
+
+    /* Conector vertical entre secciones */
+    .section-connector {
+      width: 1px;
+      height: 72px;
+      background: linear-gradient(to bottom, rgba(74,158,255,0.8), transparent);
+      margin: 0 auto;
+    }
+
+    /* Hero: motor (izq) — funde a negro en el borde derecho */
+    .hero-left {
+      background:
+        linear-gradient(to right, rgba(8,8,8,0.50) 0%, rgba(8,8,8,0.80) 65%, rgba(8,8,8,1) 100%),
+        url('img/motor.jpg') center / cover no-repeat;
+    }
+    /* Hero: violín (der) — funde a negro en el borde izquierdo */
+    .hero-right {
+      background:
+        linear-gradient(to left, rgba(8,8,8,0.15) 0%, rgba(8,8,8,0.75) 100%),
+        url('img/violin.jpg') center / cover no-repeat;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: #080808; }
+    ::-webkit-scrollbar-thumb { background: #303030; border-radius: 2px; }
+
+    /* Barra de progreso (hero player) */
+    #progressBar {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 2px;
+      background: linear-gradient(to right, #C0C0C0 var(--progress, 0%), #303030 var(--progress, 0%));
+      cursor: pointer;
+      outline: none;
+    }
+    #progressBar::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: #C0C0C0;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    #progressBar::-webkit-slider-thumb:hover { background: #F0F0F0; }
+
+    /* Barras de waveform */
+    .waveform-bar {
+      flex: 1;
+      background: #252525;
+      border-radius: 1px;
+      transition: background 0.2s;
+      min-height: 6%;
+    }
+    .waveform-bar.active {
+      background: linear-gradient(to top, #4A9EFF, rgba(107,179,255,0.5));
+    }
+    @keyframes waveAnim {
+      0%, 100% { transform: scaleY(1); }
+      50%       { transform: scaleY(1.35); }
+    }
+    .waveform-bar.active.playing {
+      animation: waveAnim 0.5s ease-in-out infinite;
+      animation-delay: calc(var(--i, 0) * 0.018s);
+    }
+
+    /* Blog card: línea inferior en hover */
+    .blog-card { position: relative; }
+    .blog-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      height: 2px; width: 0;
+      background: linear-gradient(to right, #4A9EFF, transparent);
+      transition: width 0.4s ease;
+    }
+    .blog-card:hover::after { width: 100%; }
+
+    body { -webkit-font-smoothing: antialiased; }
+    html { scroll-behavior: smooth; }
+
+    @keyframes scroll-float {
+      0%, 100% { transform: translateY(0px); opacity: 0.7; }
+      50%       { transform: translateY(-7px); opacity: 1; }
+    }
+    .scroll-float { animation: scroll-float 2.4s ease-in-out infinite; }
+  </style>
+</head>
+
+<body class="bg-base text-white font-sans overflow-x-hidden">
+
+  <!-- ═══════════════════════════════════════════════
+       HEADER / NAV
+  ═══════════════════════════════════════════════ -->
+  <header id="mainHeader" class="fixed top-0 left-0 right-0 z-50 bg-base/90 backdrop-blur-md transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
+
+      <!-- Nav izquierda (desktop) -->
+      <nav class="hidden md:flex gap-8">
+        <a href="#inicio"   class="text-[14px] tracking-[0.3em] uppercase text-white/90 hover:text-accent-hi transition-colors duration-300">Inicio</a>
+        <a href="#sobre-mi" class="text-[14px] tracking-[0.3em] uppercase text-white/90 hover:text-accent-hi transition-colors duration-300">Sobre mí</a>
+        <a href="#musica"   class="text-[14px] tracking-[0.3em] uppercase text-white/90 hover:text-accent-hi transition-colors duration-300">Música</a>
+      </nav>
+
+      <!-- Logo centrado — solo la imagen, sin tagline -->
+      <a href="#inicio" class="flex items-center">
+        <img src="img/Logo-ABH-recortado.png" alt="ABH" class="h-16 w-auto" style="filter: brightness(1.6) contrast(1.1) drop-shadow(0 0 12px rgba(255,255,255,0.12))">
+      </a>
+
+      <!-- Nav derecha (desktop) -->
+      <nav class="hidden md:flex gap-8">
+        <a href="#bitacora"  class="text-[14px] tracking-[0.3em] uppercase text-white/90 hover:text-accent-hi transition-colors duration-300">Bitácora</a>
+        <a href="#proyectos" class="text-[14px] tracking-[0.3em] uppercase text-white/90 hover:text-accent-hi transition-colors duration-300">Proyectos</a>
+        <a href="#contacto"  class="text-[14px] tracking-[0.3em] uppercase text-white/90 hover:text-accent-hi transition-colors duration-300">Contacto</a>
+      </nav>
+
+      <!-- Hamburguesa (móvil) -->
+      <button onclick="toggleMenu()" class="md:hidden text-white/70 hover:text-white transition-colors p-1" aria-label="Menú">
+        <svg id="iconMenu" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"/>
+        </svg>
+        <svg id="iconClose" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Línea + tagline en una sola franja bien delimitada -->
+    <div class="chrome-line"></div>
+    <div class="hidden md:block text-center py-[5px]">
+      <span class="text-[9px] tracking-[0.45em] text-chrome/60 uppercase font-light">Ingeniería Emocional Sinfónica</span>
+    </div>
+  </header>
+
+  <!-- Menú móvil — top ajustado al alto real del header (80px + línea + tagline ≈ 88px en desktop, 81px en móvil) -->
+  <div id="mobileMenu" class="hidden fixed top-[81px] left-0 right-0 z-40 bg-base/97 backdrop-blur-md border-b border-chrome-lo/20 md:hidden">
+    <nav class="flex flex-col px-8 py-6 gap-0">
+      <a href="#inicio"    onclick="toggleMenu()" class="text-[14px] tracking-[0.3em] uppercase text-white/90 hover:text-accent-hi transition-colors border-b border-chrome-lo/20 py-4">Inicio</a>
+      <a href="#sobre-mi"  onclick="toggleMenu()" class="text-[14px] tracking-[0.3em] uppercase text-white/90 hover:text-accent-hi transition-colors border-b border-chrome-lo/20 py-4">Sobre mí</a>
+      <a href="#musica"    onclick="toggleMenu()" class="text-[14px] tracking-[0.3em] uppercase text-white/90 hover:text-accent-hi transition-colors border-b border-chrome-lo/20 py-4">Música</a>
+      <a href="#bitacora"  onclick="toggleMenu()" class="text-[14px] tracking-[0.3em] uppercase text-white/90 hover:text-accent-hi transition-colors border-b border-chrome-lo/20 py-4">Bitácora</a>
+      <a href="#proyectos" onclick="toggleMenu()" class="text-[14px] tracking-[0.3em] uppercase text-white/90 hover:text-accent-hi transition-colors border-b border-chrome-lo/20 py-4">Proyectos</a>
+      <a href="#contacto"  onclick="toggleMenu()" class="text-[14px] tracking-[0.3em] uppercase text-white/90 hover:text-accent-hi transition-colors py-4">Contacto</a>
+    </nav>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════ -->
+  <section id="inicio" class="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
+
+    <!-- Fondo dividido -->
+    <div class="absolute inset-0 flex">
+      <div class="flex-1 hero-left"></div>
+      <div class="flex-1 hero-right"></div>
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-r from-base/50 via-base/20 to-base/50"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-base/90 via-transparent to-base/90"></div>
+    <div class="absolute inset-x-1/4 inset-y-0 bg-gradient-to-r from-transparent via-base/30 to-transparent"></div>
+
+    <!-- Contenido -->
+    <div class="relative z-10 text-center px-8 max-w-2xl w-full">
+
+      <p class="text-[14px] tracking-[0.55em] uppercase text-chrome/85 mb-8 font-light">Al Bert Hoven</p>
+
+      <h1 class="font-serif font-light leading-none mb-1">
+        <span class="block text-6xl md:text-7xl lg:text-8xl text-chrome-hi/90 tracking-wide">Música Sinfónica</span>
+        <span class="block text-6xl md:text-7xl lg:text-8xl text-chrome-gradient italic font-semibold tracking-wide">Visceral</span>
+      </h1>
+
+      <div class="chrome-line w-20 mx-auto my-7"></div>
+
+      <p class="text-[19px] text-chrome/85 tracking-wider font-light leading-relaxed max-w-lg mx-auto mb-10">
+        No es música de fondo, sino una identidad con alma.<br>
+        Composiciones a medida para particulares y proyectos audiovisuales.
+      </p>
+
+      <!-- Reproductor hero -->
+      <div class="bg-base/75 backdrop-blur-sm border border-accent/30 max-w-lg mx-auto px-8 py-6" style="box-shadow:0 0 40px rgba(74,158,255,0.06)">
+        <!-- Waveform mini -->
+        <div id="waveformHero" class="flex items-end gap-[2px] h-12 mb-5 overflow-hidden"></div>
+
+        <div class="flex items-center gap-6">
+          <button id="playBtnHero" onclick="togglePlay()"
+            class="w-14 h-14 flex-shrink-0 flex items-center justify-center border border-chrome/40 hover:border-accent transition-colors duration-300">
+            <svg id="iconPlay" class="w-5 h-5 fill-chrome ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            <svg id="iconPause" class="w-5 h-5 fill-chrome hidden" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+          </button>
+          <div class="flex-1 min-w-0">
+            <p class="text-[11px] tracking-[0.4em] uppercase text-chrome/50 mb-1.5">Reproduciendo</p>
+            <p id="trackName" class="text-[18px] text-chrome/85 font-sans italic truncate mb-3">— — —</p>
+            <div class="flex items-center gap-3">
+              <span id="timeCurrent" class="text-[12px] text-chrome/50 w-8 text-right tabular-nums">0:00</span>
+              <input type="range" id="progressBar" min="0" max="100" step="0.1" value="0"
+                oninput="seekTo(this.value)" class="flex-1">
+              <span id="timeDuration" class="text-[12px] text-chrome/50 w-8 tabular-nums">0:00</span>
+            </div>
+          </div>
+        </div>
+        <audio id="audioPlayer" src="Fotos de una vida.mp3"
+          onloadedmetadata="onMetadataLoaded()" ontimeupdate="onTimeUpdate()" onended="onEnded()"></audio>
+      </div>
+
+      <a href="#contacto"
+        class="group inline-flex items-center gap-3 mt-8 px-10 py-4 border border-chrome/60 hover:border-accent text-chrome-hi hover:text-accent transition-all duration-300 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-accent/0 via-accent/8 to-accent/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+        <span class="relative text-[12px] tracking-[0.4em] uppercase font-light">Contactar</span>
+        <svg class="relative w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2">
+      <div class="scroll-float flex flex-col items-center gap-2">
+        <span class="text-[10px] tracking-[0.4em] uppercase text-chrome-hi">Scroll</span>
+        <div class="w-px h-8 bg-gradient-to-b from-chrome-hi to-transparent"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       SOBRE MÍ
+  ═══════════════════════════════════════════════ -->
+  <section id="sobre-mi" class="py-32 px-6 relative bg-base">
+    <div class="max-w-5xl mx-auto">
+
+      <div class="text-center mb-20">
+        <div class="section-connector mb-8"></div>
+        <p class="text-[11px] tracking-[0.5em] uppercase text-accent mb-4">Compositor · Zaragoza</p>
+        <h2 class="font-serif text-5xl md:text-6xl font-light text-chrome-hi tracking-[0.15em] mb-6">Sobre mí</h2>
+        <div class="chrome-line w-16 mx-auto"></div>
+      </div>
+
+      <!-- Foto + Apertura -->
+      <div class="grid grid-cols-1 md:grid-cols-[65fr_35fr] gap-0 mb-8 items-stretch">
+
+        <!-- Retrato -->
+        <div class="relative overflow-hidden">
+          <img src="Fotos Alberto compressed/IMG_5173.jpg"
+               alt="Alberto Luna — Al Bert Hoven, compositor sinfónico"
+               class="w-full h-full object-cover grayscale contrast-105"
+               style="min-height:320px; display:block;">
+          <div class="absolute inset-0 border border-accent/25 pointer-events-none"></div>
+          <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-base to-transparent pointer-events-none"></div>
+          <div class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-accent/60"></div>
+          <div class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-accent/60"></div>
+        </div>
+
+        <!-- Texto -->
+        <div class="bg-base2 border border-chrome-lo/30 p-8 md:p-10 flex items-center">
+          <p class="font-sans text-lg md:text-xl text-chrome/90 leading-relaxed">
+            Soy <strong class="text-chrome-hi">Al Bert Hoven</strong>, compositor de música sinfónica.
+            Desarrollo obras originales para particulares y proyectos audiovisuales que necesitan una pieza
+            con sentido propio, construida desde cero y adaptada a un contexto concreto.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Dos tarjetas -->
+      <div class="grid md:grid-cols-2 gap-6 mb-10">
+        <div class="bg-base2 border border-chrome-lo/30 p-8">
+          <p class="font-sans text-lg text-chrome/75 leading-relaxed">
+            Mi forma de entender la música nace de una sensación muy concreta: hay momentos en los que
+            <em class="text-accent not-italic">algo se activa por dentro, con fuerza</em>,
+            casi como un motor que arranca. Esa energía, contenida durante años, es la que me ha llevado
+            a desarrollar este proyecto y a explorar una vía creativa más personal.
+          </p>
+        </div>
+        <div class="bg-base2 border border-chrome-lo/30 p-8">
+          <p class="font-sans text-lg text-chrome/75 leading-relaxed">
+            Trabajo desde una idea clara: <strong class="text-chrome/85">la música debe cumplir una función
+            dentro de la historia</strong>. No la utilizo como acompañamiento genérico, sino como un elemento
+            que aporta estructura, dirección y significado.
+          </p>
+        </div>
+      </div>
+
+      <!-- Acordeón biográfico -->
+      <div class="mb-12">
+
+        <!-- Item 1 -->
+        <div class="border-t border-chrome-lo/20">
+          <button onclick="toggleAccordion(this)"
+            class="w-full flex items-center justify-between py-5 text-left group">
+            <span class="font-serif text-xl md:text-2xl text-chrome-hi group-hover:text-accent transition-colors duration-300">
+              Mi relación con la música
+            </span>
+            <svg class="acc-icon flex-shrink-0 ml-4 w-5 h-5 stroke-accent transition-transform duration-300"
+                 fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+            </svg>
+          </button>
+          <div class="acc-body overflow-hidden" style="max-height:0; transition:max-height .4s ease, opacity .35s ease; opacity:0;">
+            <div class="pb-8 space-y-5 max-w-3xl">
+              <p class="font-sans text-lg text-chrome/75 leading-relaxed">
+                Mi relación con la música empieza a los 10 años. Desde entonces, he mantenido una formación
+                constante, comenzando con el estudio de órgano electrónico hasta quinto curso y desarrollando
+                posteriormente experiencia como teclista en dos grupos de rock en Zaragoza.
+              </p>
+              <p class="font-sans text-lg text-chrome/75 leading-relaxed">
+                Ese recorrido me permitió entender la música desde dos perspectivas distintas: la estructura
+                académica y la práctica real dentro de un grupo.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="border-t border-chrome-lo/20 border-b border-chrome-lo/20">
+          <button onclick="toggleAccordion(this)"
+            class="w-full flex items-center justify-between py-5 text-left group">
+            <span class="font-serif text-xl md:text-2xl text-chrome-hi group-hover:text-accent transition-colors duration-300">
+              Mi identidad como compositor
+            </span>
+            <svg class="acc-icon flex-shrink-0 ml-4 w-5 h-5 stroke-accent transition-transform duration-300"
+                 fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+            </svg>
+          </button>
+          <div class="acc-body overflow-hidden" style="max-height:0; transition:max-height .4s ease, opacity .35s ease; opacity:0;">
+            <div class="pb-8 space-y-5 max-w-3xl">
+              <p class="font-sans text-lg text-chrome/75 leading-relaxed">
+                Mi verdadera identidad como compositor nació mucho después. Tras décadas de formación y vivencias,
+                el proyecto Al Bert Hoven surge de un punto de ruptura: un momento en el que la música dejó de
+                ser una compañía para convertirse en una exigencia interna.
+              </p>
+              <p class="font-sans text-lg text-chrome/75 leading-relaxed">
+                Escribo desde una línea sinfónica contemporánea con raíces neo-románticas, buscando siempre esa
+                emotividad cruda que solo una orquesta puede transmitir.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Cita destacada -->
+      <div class="text-center mb-10 py-8 px-4">
+        <div class="chrome-line w-12 mx-auto mb-8"></div>
+        <p class="font-serif text-2xl md:text-3xl text-chrome-hi italic leading-relaxed max-w-2xl mx-auto">
+          "No entiendo la música sin evolución,<br class="hidden md:block"> sin tensión y, sobre todo, sin verdad."
+        </p>
+        <div class="chrome-line w-12 mx-auto mt-8"></div>
+      </div>
+
+      <!-- Estilo -->
+      <div class="border-l-2 border-accent bg-base2 p-8 md:p-12 mb-10">
+        <p class="font-sans text-xl md:text-2xl text-chrome/90 leading-relaxed mb-4">
+          Mi estilo se sitúa dentro de una <span class="text-accent">línea sinfónica contemporánea
+          con influencia neo-romántica</span>. Busco desarrollar piezas con coherencia interna,
+          evolución clara y capacidad de transmisión.
+        </p>
+        <p class="font-sans text-lg text-chrome/65 leading-relaxed">
+          Actualmente continúo mi formación musical, compaginando el desarrollo del proyecto con estudios
+          de grado en música, consolidando un enfoque basado en criterio, estructura y evolución constante.
+        </p>
+      </div>
+
+      <!-- Cierre -->
+      <div class="text-center">
+        <p class="font-sans text-lg text-chrome/50 italic">
+          Cada composición se plantea desde la intención, evitando soluciones reutilizables.<br>
+          Piezas con coherencia interna, desarrollo progresivo y una identidad sonora definida.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       VÍDEO
+  ═══════════════════════════════════════════════ -->
+  <section class="py-24 px-6 relative bg-base2">
+    <div class="max-w-5xl mx-auto relative z-10">
+
+      <div class="relative border border-chrome-lo/20 overflow-hidden"
+           style="box-shadow:0 0 60px rgba(0,0,0,0.6), 0 0 1px rgba(74,158,255,0.15)">
+        <video
+          controls
+          preload="none"
+          poster="video/video-poster.jpg"
+          class="w-full block bg-base"
+          style="max-height:520px; aspect-ratio:16/9; object-fit:cover;"
+        >
+          <source src="video/video-exteriores.mp4" type="video/mp4">
+          Tu navegador no soporta el reproductor de vídeo HTML5.
+        </video>
+        <!-- Overlay de inicio (se oculta al hacer play) -->
+        <div class="absolute inset-0 pointer-events-none"
+             style="background:linear-gradient(to bottom, transparent 60%, rgba(8,8,8,0.4) 100%)"></div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       MÚSICA
+  ═══════════════════════════════════════════════ -->
+  <section id="musica" class="py-32 px-6 relative" style="
+      background-image: url('Fotos Alberto compressed/alberthoven-musica-sinfonica.jpg');
+      background-size: cover;
+      background-position: center top;
+      background-attachment: fixed;">
+    <!-- Capa de oscurecimiento -->
+    <div class="absolute inset-0" style="background: rgba(8,8,8,0.86);"></div>
+    <!-- Degradado inferior para fundirse con la sección siguiente -->
+    <div class="absolute inset-x-0 bottom-0 h-56 pointer-events-none" style="background: linear-gradient(to bottom, transparent, #080808);"></div>
+    <div class="max-w-5xl mx-auto relative z-10">
+
+      <div class="text-center mb-20">
+        <div class="section-connector mb-8"></div>
+        <p class="text-[11px] tracking-[0.5em] uppercase text-accent mb-4">Selección · Estudio</p>
+        <h2 class="font-serif text-5xl md:text-6xl font-light text-chrome-hi tracking-[0.15em] mb-6">Música</h2>
+        <div class="chrome-line w-16 mx-auto mb-8"></div>
+        <div class="max-w-3xl mx-auto space-y-4">
+          <p class="font-sans text-lg text-chrome/80 leading-relaxed">
+            Aquí puedes acceder a una selección de composiciones desarrolladas dentro del proyecto.
+            Cada pieza responde a un planteamiento distinto, pero mantiene una misma base: coherencia
+            estructural y claridad expresiva.
+          </p>
+          <p class="font-sans text-lg text-chrome/80 leading-relaxed">
+            Las obras están desarrolladas desde cero, sin reutilización de estructuras previas.
+            Cada una responde a un contexto específico.
+          </p>
+          <p class="font-sans text-lg text-chrome/70 italic leading-relaxed">
+            Es música escrita para ser sentida, no solo escuchada.
+          </p>
+        </div>
+      </div>
+
+      <!-- Player destacado -->
+      <div class="bg-base border-2 border-chrome-lo/25 hover:border-accent/35 transition-colors duration-500 p-8 md:p-12">
+        <p class="text-[10px] tracking-[0.5em] uppercase text-accent/60 mb-4">Composición destacada</p>
+        <h3 class="font-serif text-3xl md:text-4xl text-chrome-hi mb-1">Fotos de una vida</h3>
+        <p class="font-sans text-lg text-chrome/55 italic mb-8">Composición Orquestal · Grabación de Estudio</p>
+
+        <!-- Waveform grande -->
+        <div id="waveformFeatured" class="flex items-end gap-[2px] h-24 mb-6 overflow-hidden"></div>
+
+        <!-- Barra de progreso clicable -->
+        <div class="flex items-center gap-3 mb-8">
+          <span id="timeCurrent2" class="text-[12px] text-chrome/50 w-8 text-right tabular-nums">0:00</span>
+          <div id="progressTrack" class="flex-1 h-[2px] bg-chrome-lo/40 cursor-pointer relative" onclick="seekByClick(event, this)">
+            <div id="progressFill" class="h-full bg-gradient-to-r from-chrome/60 to-accent/80" style="width:0%; transition: width 0.1s linear;"></div>
+          </div>
+          <span id="timeDuration2" class="text-[12px] text-chrome/50 w-8 tabular-nums">0:00</span>
+        </div>
+
+        <button onclick="togglePlay()"
+          class="group flex items-center gap-3 px-10 py-4 border border-chrome/60 hover:border-accent text-chrome-hi hover:text-accent transition-all duration-300 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-r from-accent/0 via-accent/8 to-accent/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+          <svg id="iconPlay2" class="relative w-4 h-4 fill-current transition-colors" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          <svg id="iconPause2" class="relative w-4 h-4 fill-current transition-colors hidden" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+          <span id="playBtnLabel" class="relative text-[12px] tracking-[0.4em] uppercase font-light">Reproducir</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       MANIFIESTO
+  ═══════════════════════════════════════════════ -->
+  <section class="py-32 px-6 relative bg-base overflow-hidden">
+    <div class="max-w-5xl mx-auto relative z-10">
+
+      <!-- Frase principal -->
+      <div class="text-center mb-20">
+        <p class="font-serif text-3xl md:text-5xl text-chrome/75 leading-tight mb-2">
+          La música debe cumplir una función
+        </p>
+        <p class="font-serif text-3xl md:text-5xl italic font-semibold leading-tight">
+          <span class="text-chrome-gradient">dentro de la historia</span>
+        </p>
+      </div>
+
+      <!-- Tres pilares -->
+      <div class="grid md:grid-cols-3 gap-8 mb-20">
+        <div class="text-center">
+          <div class="chrome-line w-16 mx-auto mb-6"></div>
+          <h3 class="font-sans text-sm text-chrome-hi/70 tracking-[0.2em] uppercase mb-4">Sin Reutilización</h3>
+          <p class="font-sans text-chrome/60 leading-relaxed">
+            Cada composición se construye desde cero, evitando soluciones genéricas o plantillas predefinidas.
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="chrome-line w-16 mx-auto mb-6"></div>
+          <h3 class="font-sans text-sm text-chrome-hi/70 tracking-[0.2em] uppercase mb-4">Coherencia Interna</h3>
+          <p class="font-sans text-chrome/60 leading-relaxed">
+            Piezas con lógica estructural clara, desarrollo progresivo y una identidad sonora definida.
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="chrome-line w-16 mx-auto mb-6"></div>
+          <h3 class="font-sans text-sm text-chrome-hi/70 tracking-[0.2em] uppercase mb-4">Sentido Propio</h3>
+          <p class="font-sans text-chrome/60 leading-relaxed">
+            Música que no llena espacio, sino que construye recorrido, mantiene tensión y equilibrio.
+          </p>
+        </div>
+      </div>
+
+      <!-- Cita -->
+      <div class="bg-base2 border-y border-chrome-lo/25 py-12 px-6 text-center">
+        <p class="font-serif text-2xl md:text-3xl text-chrome/65 italic leading-relaxed">
+          "Estoy en una etapa inicial. Si decides escuchar mi trabajo o plantear una colaboración,
+          <br class="hidden md:block">
+          <span class="text-accent not-italic"> estarás dando forma a este proceso desde el principio</span>."
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       PROYECTOS
+  ═══════════════════════════════════════════════ -->
+  <div class="h-px bg-gradient-to-r from-transparent via-[#4A9EFF]/30 to-transparent"></div>
+  <section id="proyectos" class="py-32 px-6 relative bg-[#0a0a0a]">
+    <div class="max-w-5xl mx-auto">
+
+      <div class="text-center mb-20">
+        <div class="section-connector mb-8"></div>
+        <p class="text-[11px] tracking-[0.5em] uppercase text-accent mb-4">Encargos · Colaboraciones</p>
+        <h2 class="font-serif text-5xl md:text-6xl font-light text-chrome-hi tracking-[0.15em] mb-6">Proyectos</h2>
+        <div class="chrome-line w-16 mx-auto"></div>
+      </div>
+
+      <!-- Dos tipos -->
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+
+        <!-- Particulares -->
+        <div class="bg-base border border-chrome-lo/30 hover:border-accent/40 transition-all duration-300 p-8 md:p-10 group">
+          <div class="inline-block p-4 border border-chrome-lo/25 group-hover:border-accent/35 transition-colors mb-6">
+            <svg class="w-7 h-7 stroke-chrome/40 group-hover:stroke-accent transition-colors" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-2xl text-chrome-hi mb-4">Para Particulares</h3>
+          <p class="font-sans text-lg text-chrome/55 leading-relaxed mb-4">
+            Me ofrezco para desarrollar composiciones para particulares que buscan representar
+            una historia personal concreta a través de la música. El proceso comienza definiendo
+            qué se quiere transmitir y se traduce en una obra sinfónica construida desde cero.
+          </p>
+          <p class="font-sans text-chrome/50 italic leading-relaxed">
+            El resultado es una pieza única, pensada para tener sentido propio y perdurar más allá de un uso puntual.
+          </p>
+        </div>
+
+        <!-- Audiovisual -->
+        <div class="bg-base border border-chrome-lo/30 hover:border-accent/40 transition-all duration-300 p-8 md:p-10 group">
+          <div class="inline-block p-4 border border-chrome-lo/25 group-hover:border-accent/35 transition-colors mb-6">
+            <svg class="w-7 h-7 stroke-chrome/40 group-hover:stroke-accent transition-colors" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-2xl text-chrome-hi mb-4">Proyectos Audiovisuales</h3>
+          <p class="font-sans text-lg text-chrome/55 leading-relaxed mb-4">
+            También me ofrezco para proyectos audiovisuales que necesitan una música con función
+            narrativa clara. La composición se adapta al ritmo, estructura y tono del contenido.
+          </p>
+          <p class="font-sans text-chrome/50 italic leading-relaxed">
+            El objetivo es que la música no sea un añadido, sino una parte activa del resultado final.
+          </p>
+        </div>
+      </div>
+
+      <!-- Foto intermedia -->
+      <div class="relative overflow-hidden my-8" style="height:420px;">
+        <img
+          src="Fotos Alberto compressed/IMG_5272.jpg"
+          alt="Al Bert Hoven — compositor"
+          class="w-full h-full object-cover object-top grayscale"
+          style="filter: grayscale(100%) brightness(0.75) contrast(1.1);">
+        <!-- Gradientes de integración -->
+        <div class="absolute inset-0" style="background: linear-gradient(to bottom, #0a0a0a 0%, transparent 18%, transparent 80%, #0a0a0a 100%);"></div>
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #0a0a0a 0%, transparent 15%, transparent 85%, #0a0a0a 100%);"></div>
+        <!-- Borde azul sutil -->
+        <div class="absolute inset-x-0 bottom-0 h-px" style="background: linear-gradient(to right, transparent, rgba(74,158,255,0.4), transparent);"></div>
+      </div>
+
+      <!-- Proceso -->
+      <div class="text-center py-12 max-w-3xl mx-auto">
+
+        <div class="chrome-line w-16 mx-auto mb-10"></div>
+
+        <h2 class="font-serif text-4xl md:text-5xl font-light text-chrome-hi tracking-[0.12em] mb-10">
+          Proceso de Trabajo
+        </h2>
+
+        <p class="font-sans text-lg text-chrome/75 leading-relaxed mb-6">
+          Cada proyecto sigue una estructura definida: <strong class="text-chrome/90">análisis inicial,
+          lluvia de ideas, desarrollo de la composición (estos dos suelen formar bucle) y ajuste final</strong>.
+          Este proceso permite mantener coherencia y asegurar que la pieza se ajuste lo máximo posible
+          a lo que el proyecto necesita.
+        </p>
+
+        <p class="font-sans text-lg text-chrome/65 leading-relaxed mb-12">
+          Al tratarse de un proyecto en desarrollo, <span class="text-accent">cada colaboración
+          tiene un valor especial</span>. Supone construir experiencia real y afinar una línea de trabajo
+          que busca consolidarse en el tiempo.
+        </p>
+
+        <a href="#contacto"
+          class="group inline-flex items-center gap-3 px-10 py-4 border border-chrome/60 hover:border-accent text-chrome-hi hover:text-accent transition-all duration-300 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-r from-accent/0 via-accent/8 to-accent/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+          <span class="relative text-[12px] tracking-[0.4em] uppercase font-light">Contactar</span>
+          <svg class="relative w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+          </svg>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       BITÁCORA
+  ═══════════════════════════════════════════════ -->
+  <section id="bitacora" class="py-32 px-6 relative bg-base">
+    <div class="max-w-5xl mx-auto">
+
+      <div class="text-center mb-20">
+        <div class="section-connector mb-8"></div>
+        <p class="text-[11px] tracking-[0.5em] uppercase text-accent mb-4">Reflexiones · Proceso</p>
+        <h2 class="font-serif text-5xl md:text-6xl font-light text-chrome-hi tracking-[0.15em] mb-6">Bitácora</h2>
+        <div class="chrome-line w-16 mx-auto mb-6"></div>
+        <p class="font-sans text-lg text-chrome/55 italic">Reflexiones, procesos y avances en los proyectos en curso</p>
+      </div>
+
+      <!-- Las entradas se inyectan dinámicamente desde api/posts.json -->
+      <div id="blog-posts-container" class="space-y-5">
+        <!-- Skeleton de carga -->
+        <div class="blog-skeleton bg-base2 border border-chrome-lo/20 p-8 md:p-10 animate-pulse">
+          <div class="h-2 w-40 bg-chrome-lo/15 rounded mb-6"></div>
+          <div class="h-5 w-3/4 bg-chrome-lo/15 rounded mb-3"></div>
+          <div class="h-3 w-full bg-chrome-lo/10 rounded mb-2"></div>
+          <div class="h-3 w-5/6 bg-chrome-lo/10 rounded"></div>
+        </div>
+        <div class="blog-skeleton bg-base2 border border-chrome-lo/20 p-8 md:p-10 animate-pulse">
+          <div class="h-2 w-32 bg-chrome-lo/15 rounded mb-6"></div>
+          <div class="h-5 w-2/3 bg-chrome-lo/15 rounded mb-3"></div>
+          <div class="h-3 w-full bg-chrome-lo/10 rounded mb-2"></div>
+          <div class="h-3 w-4/6 bg-chrome-lo/10 rounded"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Foto previa a contacto -->
+  <div class="relative overflow-hidden" style="height:480px;">
+    <img
+      src="Fotos Alberto compressed/musica-sinfonica.jpg"
+      alt="Música sinfónica — Al Bert Hoven"
+      class="w-full h-full object-cover object-center"
+      style="filter: grayscale(100%) brightness(0.7) contrast(1.15);">
+    <!-- Gradientes de integración -->
+    <div class="absolute inset-0" style="background: linear-gradient(to bottom, #0f0f0f 0%, transparent 20%, transparent 75%, #0f0f0f 100%);"></div>
+    <div class="absolute inset-0" style="background: linear-gradient(to right, #0f0f0f 0%, transparent 12%, transparent 88%, #0f0f0f 100%);"></div>
+    <!-- Línea azul superior -->
+    <div class="absolute inset-x-0 top-0 h-px" style="background: linear-gradient(to right, transparent, rgba(74,158,255,0.35), transparent);"></div>
+    <!-- Línea azul inferior -->
+    <div class="absolute inset-x-0 bottom-0 h-px" style="background: linear-gradient(to right, transparent, rgba(74,158,255,0.35), transparent);"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       CONTACTO
+  ═══════════════════════════════════════════════ -->
+  <section id="contacto" class="py-32 px-6 relative bg-base2">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="section-connector mb-8"></div>
+
+      <h2 class="font-serif text-4xl md:text-6xl font-light text-chrome-hi tracking-wide mb-8">
+        ¿Tienes un proyecto?
+      </h2>
+
+      <p class="font-sans text-xl md:text-2xl text-chrome/65 mb-8 max-w-3xl mx-auto leading-relaxed">
+        Si tienes un proyecto y necesitas una pieza musical desarrollada específicamente para él,
+        puedes escribirme y plantear tu idea.
+      </p>
+
+      <p class="font-sans text-lg text-chrome/50 mb-6 max-w-2xl mx-auto leading-relaxed">
+        Estoy en una etapa inicial, por lo que cada propuesta se valora con especial atención.
+        Es una oportunidad para trabajar de forma directa, con implicación y cuidado en el proceso.
+      </p>
+
+      <p class="font-sans text-lg text-chrome/45 mb-12 max-w-2xl mx-auto leading-relaxed italic">
+        Responderé valorando el enfoque más adecuado en función del contexto y los objetivos.
+        Cada proyecto requiere un planteamiento distinto. El primer paso es definirlo con claridad.
+      </p>
+
+      <!-- Email CTA -->
+      <a href="mailto:contacto@alberthoven.com"
+        class="group inline-flex items-center gap-3 px-10 py-4 border border-chrome/60 hover:border-accent text-chrome-hi hover:text-accent transition-all duration-300 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-accent/0 via-accent/8 to-accent/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+        <svg class="relative w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+        </svg>
+        <span class="relative text-[12px] tracking-[0.4em] uppercase font-light">
+          contacto@alberthoven.com
+        </span>
+      </a>
+
+      <p class="mt-10 font-sans text-chrome/20 italic">Proyectos selectos · Consultas profesionales</p>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="bg-base py-14 px-8 text-center">
+    <img src="img/Logo-ABH-recortado.png" alt="Al Bert Hoven" class="h-20 w-auto mx-auto mb-5" style="filter: brightness(1.5) contrast(1.1) drop-shadow(0 0 10px rgba(255,255,255,0.1))">
+    <div class="chrome-line w-16 mx-auto mb-6"></div>
+    <p class="text-[11px] tracking-widest text-chrome/15 uppercase">
+      ABH · Ingeniería Emocional Sinfónica · © 2026
+    </p>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════════════ -->
+  <script>
+
+    // ── MENÚ MÓVIL ───────────────────────────────────
+    function toggleMenu() {
+      const menu  = document.getElementById('mobileMenu');
+      const ico1  = document.getElementById('iconMenu');
+      const ico2  = document.getElementById('iconClose');
+      menu.classList.toggle('hidden');
+      ico1.classList.toggle('hidden');
+      ico2.classList.toggle('hidden');
+    }
+
+    // ── WAVEFORM ─────────────────────────────────────
+    function buildWaveform(id, count) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      for (let i = 0; i < count; i++) {
+        const h = 12 + Math.abs(Math.sin(i / 4.5) * 45) + Math.random() * 28;
+        const b = document.createElement('div');
+        b.className = 'waveform-bar';
+        b.style.height = h + '%';
+        b.style.setProperty('--i', i);
+        b.dataset.index = i;
+        el.appendChild(b);
+      }
+    }
+    buildWaveform('waveformHero', 48);
+    buildWaveform('waveformFeatured', 80);
+
+    // ── AUDIO ─────────────────────────────────────────
+    const audio      = document.getElementById('audioPlayer');
+    const bar        = document.getElementById('progressBar');
+    const tCurrent   = document.getElementById('timeCurrent');
+    const tDuration  = document.getElementById('timeDuration');
+    const tCurrent2  = document.getElementById('timeCurrent2');
+    const tDuration2 = document.getElementById('timeDuration2');
+    const progFill   = document.getElementById('progressFill');
+    const btnLabel   = document.getElementById('playBtnLabel');
+
+    function togglePlay() {
+      audio.paused ? audio.play() : audio.pause();
+      updatePlayState();
+    }
+
+    function updatePlayState() {
+      const paused = audio.paused;
+      ['iconPlay','iconPlay2'].forEach(id   => document.getElementById(id)?.classList.toggle('hidden', !paused));
+      ['iconPause','iconPause2'].forEach(id => document.getElementById(id)?.classList.toggle('hidden', paused));
+      if (btnLabel) btnLabel.textContent = paused ? 'Reproducir' : 'Pausar';
+      document.querySelectorAll('.waveform-bar.active').forEach(b => b.classList.toggle('playing', !paused));
+    }
+
+    function onMetadataLoaded() {
+      const d = fmt(audio.duration);
+      if (tDuration)  tDuration.textContent  = d;
+      if (tDuration2) tDuration2.textContent = d;
+      const raw = decodeURIComponent(audio.src.split('/').pop().replace(/\.[^/.]+$/, ''));
+      document.getElementById('trackName').textContent = raw;
+    }
+
+    function onTimeUpdate() {
+      if (!audio.duration) return;
+      const pct = (audio.currentTime / audio.duration) * 100;
+
+      // Hero player
+      bar.value = pct;
+      bar.style.setProperty('--progress', pct + '%');
+      if (tCurrent) tCurrent.textContent = fmt(audio.currentTime);
+
+      // Música player
+      if (progFill)   progFill.style.width    = pct + '%';
+      if (tCurrent2)  tCurrent2.textContent   = fmt(audio.currentTime);
+
+      // Waveforms
+      ['waveformHero','waveformFeatured'].forEach(wid => {
+        const wEl = document.getElementById(wid);
+        if (!wEl) return;
+        const bars = wEl.querySelectorAll('.waveform-bar');
+        bars.forEach(b => {
+          const active = (parseInt(b.dataset.index) / bars.length) * 100 < pct;
+          b.classList.toggle('active', active);
+          b.classList.toggle('playing', active && !audio.paused);
+        });
+      });
+    }
+
+    function onEnded() {
+      updatePlayState();
+      bar.value = 0;
+      bar.style.setProperty('--progress', '0%');
+      if (tCurrent)  tCurrent.textContent  = '0:00';
+      if (tCurrent2) tCurrent2.textContent = '0:00';
+      if (progFill)  progFill.style.width  = '0%';
+      document.querySelectorAll('.waveform-bar').forEach(b => b.classList.remove('active','playing'));
+    }
+
+    function seekTo(val) {
+      if (!audio.duration) return;
+      audio.currentTime = (val / 100) * audio.duration;
+      bar.style.setProperty('--progress', val + '%');
+    }
+
+    function seekByClick(e, el) {
+      if (!audio.duration) return;
+      audio.currentTime = (e.offsetX / el.offsetWidth) * audio.duration;
+    }
+
+    function fmt(s) {
+      if (!s || isNaN(s)) return '0:00';
+      return `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
+    }
+
+    // ── ACORDEÓN ─────────────────────────────────────
+    function toggleAccordion(btn) {
+      const item  = btn.parentElement;
+      const body  = item.querySelector('.acc-body');
+      const icon  = btn.querySelector('.acc-icon');
+      const isOpen = body.style.maxHeight !== '0px' && body.style.maxHeight !== '';
+
+      if (isOpen) {
+        body.style.maxHeight = '0px';
+        body.style.opacity   = '0';
+        icon.style.transform = 'rotate(0deg)';
+      } else {
+        body.style.maxHeight = body.scrollHeight + 'px';
+        body.style.opacity   = '1';
+        icon.style.transform = 'rotate(45deg)';
+      }
+    }
+
+    // ── HEADER CON SCROLL ────────────────────────────
+    window.addEventListener('scroll', () => {
+      const h = document.getElementById('mainHeader');
+      h.classList.toggle('shadow-[0_2px_30px_rgba(0,0,0,0.6)]', window.scrollY > 60);
+    });
+
+    // ── BITÁCORA — carga dinámica ─────────────────────
+    (async function loadBlog() {
+      const container = document.getElementById('blog-posts-container');
+      try {
+        const r = await fetch('api/posts.json');
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        const posts = await r.json();
+
+        if (!Array.isArray(posts) || !posts.length) {
+          container.innerHTML = '<p class="font-sans text-chrome/30 italic text-center py-12">No hay entradas publicadas todavía.</p>';
+          return;
+        }
+
+        container.innerHTML = posts.map(p => `
+          <article class="blog-card bg-base2 border border-chrome-lo/30 hover:border-accent/30 transition-all duration-500 overflow-hidden group">
+            <div class="p-8 md:p-10">
+              <div class="flex flex-wrap items-center gap-4 mb-6">
+                <span class="text-[11px] tracking-[0.3em] uppercase text-accent/60">${escHtmlBlog(p.dateFormatted)}</span>
+                <span class="w-px h-3 bg-chrome-lo/50"></span>
+                <span class="text-[11px] tracking-[0.3em] uppercase text-chrome/50">${escHtmlBlog(p.category)}</span>
+                <span class="w-px h-3 bg-chrome-lo/50"></span>
+                <span class="text-[11px] text-chrome/45">${parseInt(p.readTime)} min lectura</span>
+              </div>
+              <h3 class="font-serif text-2xl md:text-3xl text-chrome-hi/75 mb-4 group-hover:text-accent transition-colors duration-300">
+                ${escHtmlBlog(p.title)}
+              </h3>
+              <p class="font-sans text-lg text-chrome/65 leading-relaxed mb-5">
+                ${escHtmlBlog(p.excerpt)}
+              </p>
+              <span class="text-[11px] tracking-[0.3em] uppercase text-accent/55 group-hover:text-accent transition-colors">Leer más →</span>
+            </div>
+          </article>
+        `).join('');
+
+      } catch (e) {
+        // En local sin servidor PHP, mostrar las entradas estáticas de fallback
+        container.innerHTML = `
+          <article class="blog-card bg-base2 border border-chrome-lo/30 hover:border-accent/30 transition-all duration-500 overflow-hidden group">
+            <div class="p-8 md:p-10">
+              <div class="flex flex-wrap items-center gap-4 mb-6">
+                <span class="text-[11px] tracking-[0.3em] uppercase text-accent/60">15 Marzo 2026</span>
+                <span class="w-px h-3 bg-chrome-lo/50"></span>
+                <span class="text-[11px] tracking-[0.3em] uppercase text-chrome/50">Proceso Creativo</span>
+                <span class="w-px h-3 bg-chrome-lo/50"></span>
+                <span class="text-[11px] text-chrome/45">5 min lectura</span>
+              </div>
+              <h3 class="font-serif text-2xl md:text-3xl text-chrome-hi/75 mb-4 group-hover:text-accent transition-colors duration-300">El proceso creativo: de la idea al primer acorde</h3>
+              <p class="font-sans text-lg text-chrome/65 leading-relaxed mb-5">Cada composición nace de un momento específico. No siempre es claro, no siempre es inmediato. Pero cuando aparece, tiene que traducirse en música con intención…</p>
+              <span class="text-[11px] tracking-[0.3em] uppercase text-accent/55 group-hover:text-accent transition-colors">Leer más →</span>
+            </div>
+          </article>
+          <article class="blog-card bg-base2 border border-chrome-lo/30 hover:border-accent/30 transition-all duration-500 overflow-hidden group">
+            <div class="p-8 md:p-10">
+              <div class="flex flex-wrap items-center gap-4 mb-6">
+                <span class="text-[11px] tracking-[0.3em] uppercase text-accent/60">8 Marzo 2026</span>
+                <span class="w-px h-3 bg-chrome-lo/50"></span>
+                <span class="text-[11px] tracking-[0.3em] uppercase text-chrome/50">Proyectos</span>
+                <span class="w-px h-3 bg-chrome-lo/50"></span>
+                <span class="text-[11px] text-chrome/45">4 min lectura</span>
+              </div>
+              <h3 class="font-serif text-2xl md:text-3xl text-chrome-hi/75 mb-4 group-hover:text-accent transition-colors duration-300">Trabajando en una pieza para proyecto audiovisual</h3>
+              <p class="font-sans text-lg text-chrome/65 leading-relaxed mb-5">El cliente necesitaba algo que transmitiera tensión progresiva, sin perder elegancia. La música no podía adelantarse a la imagen, pero tampoco podía quedarse atrás…</p>
+              <span class="text-[11px] tracking-[0.3em] uppercase text-accent/55 group-hover:text-accent transition-colors">Leer más →</span>
+            </div>
+          </article>
+          <article class="blog-card bg-base2 border border-chrome-lo/30 hover:border-accent/30 transition-all duration-500 overflow-hidden group">
+            <div class="p-8 md:p-10">
+              <div class="flex flex-wrap items-center gap-4 mb-6">
+                <span class="text-[11px] tracking-[0.3em] uppercase text-accent/60">1 Marzo 2026</span>
+                <span class="w-px h-3 bg-chrome-lo/50"></span>
+                <span class="text-[11px] tracking-[0.3em] uppercase text-chrome/50">Reflexiones</span>
+                <span class="w-px h-3 bg-chrome-lo/50"></span>
+                <span class="text-[11px] text-chrome/45">6 min lectura</span>
+              </div>
+              <h3 class="font-serif text-2xl md:text-3xl text-chrome-hi/75 mb-4 group-hover:text-accent transition-colors duration-300">Influencias: entre lo clásico y lo contemporáneo</h3>
+              <p class="font-sans text-lg text-chrome/65 leading-relaxed mb-5">Mi estilo se nutre de dos mundos que, en teoría, están separados por décadas. Pero en la práctica, comparten algo fundamental: la búsqueda de una narrativa clara…</p>
+              <span class="text-[11px] tracking-[0.3em] uppercase text-accent/55 group-hover:text-accent transition-colors">Leer más →</span>
+            </div>
+          </article>`;
+      }
+    })();
+
+    function escHtmlBlog(str) {
+      return String(str || '').replace(/[&<>"']/g, c =>
+        ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    }
+
+  </script>
+
+</body>
+</html>
