@@ -14,9 +14,20 @@ services:
       - "traefik.http.routers.alberthoven.entrypoints=websecure"
       - "traefik.http.routers.alberthoven.tls.certresolver=letsencrypt"
       - "traefik.http.services.alberthoven.loadbalancer.server.port=80"
+    networks:
+      - dokploy-network
+      - internal
 
   php:
     image: php:8.2-fpm-alpine
     restart: unless-stopped
     volumes:
       - .:/var/www/html
+    networks:
+      - internal
+
+networks:
+  dokploy-network:
+    external: true
+  internal:
+    driver: bridge
