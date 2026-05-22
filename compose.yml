@@ -11,7 +11,6 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.alberthoven.rule=Host(`alberthoven.piensalab.com`)"
-      - "traefik.http.routers.alberthoven.entrypoints=websecure"
       - "traefik.http.routers.alberthoven.tls.certresolver=letsencrypt"
       - "traefik.http.services.alberthoven.loadbalancer.server.port=80"
     networks:
@@ -29,5 +28,6 @@ services:
 networks:
   dokploy-network:
     external: true
+    name: dokploy-network
   internal:
     driver: bridge
