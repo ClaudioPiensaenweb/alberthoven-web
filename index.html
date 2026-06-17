@@ -862,15 +862,15 @@
   <footer class="bg-base py-14 px-8 text-center">
     <img src="img/Logo-ABH-recortado.png" alt="Al Bert Hoven" class="h-20 w-auto mx-auto mb-5" style="filter: brightness(1.5) contrast(1.1) drop-shadow(0 0 10px rgba(255,255,255,0.1))">
     <div class="chrome-line w-16 mx-auto mb-6"></div>
-    <p class="text-[11px] tracking-widest text-chrome/15 uppercase mb-3">
+    <p class="text-[11px] tracking-widest text-chrome/30 uppercase mb-4">
       ABH · Ingeniería Emocional Sinfónica · © 2026
     </p>
-    <p class="text-[10px] tracking-widest uppercase">
-      <a href="/aviso-legal.html" class="text-chrome/20 hover:text-chrome/50 transition-colors duration-300">Aviso Legal</a>
-      <span class="text-chrome/10 mx-2">·</span>
-      <a href="/privacidad.html" class="text-chrome/20 hover:text-chrome/50 transition-colors duration-300">Privacidad</a>
-      <span class="text-chrome/10 mx-2">·</span>
-      <a href="/cookies.html" class="text-chrome/20 hover:text-chrome/50 transition-colors duration-300">Cookies</a>
+    <p class="text-[11px] tracking-[0.3em] uppercase">
+      <a href="/aviso-legal.html" class="text-chrome/40 hover:text-chrome/80 transition-colors duration-300">Aviso Legal</a>
+      <span class="text-chrome/20 mx-3">·</span>
+      <a href="/privacidad.html" class="text-chrome/40 hover:text-chrome/80 transition-colors duration-300">Privacidad</a>
+      <span class="text-chrome/20 mx-3">·</span>
+      <a href="/cookies.html" class="text-chrome/40 hover:text-chrome/80 transition-colors duration-300">Cookies</a>
     </p>
   </footer>
 
@@ -1101,6 +1101,33 @@
         ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
     }
 
+  </script>
+
+  <!-- Banner de cookies -->
+  <div id="cookieBanner" class="fixed bottom-0 left-0 right-0 z-50 bg-base2 border-t border-chrome-lo/30 px-6 py-5 hidden">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-start sm:items-center gap-4 justify-between">
+      <p class="text-[13px] text-chrome/70 leading-relaxed font-light">
+        Este sitio utiliza cookies técnicas de Google Fonts para mostrar las tipografías correctamente.
+        No empleamos cookies de analítica ni publicidad.
+        <a href="/cookies.html" class="text-accent/80 hover:text-accent underline underline-offset-2 ml-1 transition-colors">Más información</a>
+      </p>
+      <button onclick="aceptarCookies()"
+        class="flex-shrink-0 px-7 py-2.5 border border-chrome/40 hover:border-accent text-[11px] tracking-[0.3em] uppercase text-chrome/80 hover:text-accent transition-all duration-300">
+        Aceptar
+      </button>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      if (!localStorage.getItem('cookies_aceptadas')) {
+        document.getElementById('cookieBanner').classList.remove('hidden');
+      }
+    })();
+    function aceptarCookies() {
+      localStorage.setItem('cookies_aceptadas', '1');
+      document.getElementById('cookieBanner').classList.add('hidden');
+    }
   </script>
 
 </body>
