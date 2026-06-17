@@ -11,9 +11,16 @@ services:
       - php
     labels:
       - "traefik.enable=true"
+      # HTTPS
       - "traefik.http.routers.alberthoven.rule=Host(`alberthoven.com`) || Host(`www.alberthoven.com`)"
       - "traefik.http.routers.alberthoven.tls.certresolver=letsencrypt"
       - "traefik.http.services.alberthoven.loadbalancer.server.port=80"
+      # HTTP → HTTPS redirect
+      - "traefik.http.routers.alberthoven-http.rule=Host(`alberthoven.com`) || Host(`www.alberthoven.com`)"
+      - "traefik.http.routers.alberthoven-http.entrypoints=web"
+      - "traefik.http.routers.alberthoven-http.middlewares=alberthoven-https@docker"
+      - "traefik.http.middlewares.alberthoven-https.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.alberthoven-https.redirectscheme.permanent=true"
     networks:
       - dokploy-network
       - internal
