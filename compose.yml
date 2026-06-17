@@ -2,7 +2,12 @@ services:
 
   web:
     image: nginx:alpine
+    user: root
     restart: unless-stopped
+    command: >
+      sh -c "find /var/www/html -type f -exec chmod a+r {} + &&
+             find /var/www/html -type d -exec chmod a+rx {} + &&
+             nginx -g 'daemon off;'"
     volumes:
       - ./nginx-global.conf:/etc/nginx/nginx.conf:ro
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
